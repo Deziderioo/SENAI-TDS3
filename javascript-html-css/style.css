@@ -1,0 +1,18 @@
+.PrimeiraDivClass{
+    background-color: rgb(255, 99, 71);
+}  
+
+.Principal{
+    background:  rgba(128, 128, 128, 0.24);
+    width: 100vw;
+    height: 86vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 30px;
+
+   
+    
+}
