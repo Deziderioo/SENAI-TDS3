@@ -1,16 +1,19 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+
+
 }
 
 body{
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    gap: 80px;
+    gap: 20px;
+    overflow-y: auto;
+    padding: 50px;
 }
 .cards{
     height: auto;
@@ -52,8 +55,12 @@ button:hover{
 
 
 .primeiraDivClass{
-    width: 50%;
-    text-align:center;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 
 .principal{
@@ -67,6 +74,7 @@ gap: 50px;
 }
 
 h1{
+    gap: 10px;
     border-bottom: 20px solid rgb(96, 0, 250);
     padding-bottom: 10px;
 }

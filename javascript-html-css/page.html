@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade HTML</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
 <div class="primeiraDivClass">
@@ -25,7 +29,7 @@
              <input class = "inputs-style" type="number" id = "num2" placeholder="Insira um numero"/>
         </div>
         <div>
-            <button onclick="">CALCULAR</button>
+            <button onclick="sum()">CALCULAR</button>
         </div>
         <div>
             <p>Resultado: <span id =ResSoma></span></p>
@@ -42,7 +46,7 @@
             <input class = "inputs-style" type="number" id = "num4" placeholder="Insira um numero"/>
         </div>
         <div>
-            <button onclick="">CALCULAR</button>
+            <button onclick="sub()">CALCULAR</button>
         </div>
         <div>
             <p>Resultado: <span id =ResSub></span></p>
@@ -59,7 +63,7 @@
             <input class = "inputs-style" type="number" id = "num6"placeholder="Insira um numero"/>
         </div>
         <div>
-            <button onclick="">CALCULAR</button>
+            <button onclick="div()">CALCULAR</button>
         </div>
         <div>
             <p>Resultado: <span id =ResDiv></span></p>
@@ -71,15 +75,36 @@
             <label for="num1">Numero 01</label>
             <input class = "inputs-style" type="number" id = "num7" placeholder="Insira um numero"/>
         </div>
-        <div>
+        <div class="columnLabelWithInput">
             <label for="num2">Numero 02</label>
             <input class = "inputs-style" type="number" id = "num8" placeholder="Insira um numero"/>
         </div>
-        <div>
-            <button onclick="">CALCULAR</button>
+        <div >
+            <button onclick="mult()">CALCULAR</button>
         </div>
         <div>
             <p>Resultado: <span id =ResMulti></span></p>
+        </div>
+    </div>
+    <div class = "cards">
+        <h2>Media</h2>
+        <div class="columnLabelWithInput">
+            <label for="num1">Numero 01</label>
+            <input class = "inputs-style" type="number" id = "num9" placeholder="Insira um numero"/>
+        </div>
+        <div class="columnLabelWithInput">
+            <label for="num2">Numero 02</label>
+            <input class = "inputs-style" type="number" id = "num10" placeholder="Insira um numero"/>
+        </div>
+        <div class="columnLabelWithInput">
+            <label for="num2">Numero 03</label>
+            <input class = "inputs-style" type="number" id = "num11" placeholder="Insira um numero"/>
+        </div>
+        <div >
+            <button onclick="media()">CALCULAR</button>
+        </div>
+        <div>
+            <p>Resultado: <span id =ResMed></span></p>
         </div>
     </div>
 
