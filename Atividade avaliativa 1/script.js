@@ -1,27 +1,27 @@
-var nomeGLobal;
+var nomeGlobal;
 var mensagemGlobal;
 
-function conferirMensagemWhatsapp() {
-  var nome = document.getElementById("nome").value;
-  var mensagem = document.getElementById("mensagem").value;
-  console.log(nome, mensagem);
-  nomeGLobal = nome;
-  mensagemGlobal = mensagem;
+function conferirMesagemWhatsApp(){
+    var nome = document.getElementById("nome").value;
+    var mensagem = document.getElementById("mensagem").value;
 
-  document.getElementById("confNome").textContent = nome;
-  document.getElementById("confMsg").textContent = mensagem;
+    nomeGlobal = nome;
+    mensagemGlobal = mensagem;
+
+    document.getElementById("confNome").textContent = nome;
+    document.getElementById("confMsg").textContent = mensagem;
 }
 
-function enviar() {
-  var numeroTelefone = "55419962022300";
-
-  var linkWhastApp =
-    "https://wa.me/" +
-    numeroTelefone +
-    "?text=NOME: " +
-    nomeGLobal +
-    " - " +
+function enviar(){
+    var numeroTelefone = "5541999999999";
+    console.log(nomeGlobal, mensagemGlobal)
+    var linkWhatsApp = 
+    "https://wa.me/" + 
+    numeroTelefone + 
+    "?text=NOME: " + 
+    nomeGlobal + 
+    " - " + 
     mensagemGlobal;
 
-  window.open(linkWhastApp, "_blank");
+    window.open(linkWhatsApp, "_blank")
 }

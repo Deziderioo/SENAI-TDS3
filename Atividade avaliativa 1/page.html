@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-      <ul>
-        <li><a href="#p1">Perfil 01</a></li>
-        <li><a href="#p2">Perfil 02</a></li>
-        <li><a href="#tec">Tecnologias</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
+        <ul>
+            <li><a href="#p1">Perfil 01</a></li>
+            <li><a href="#p2">Perfil 02</a></li>
+            <li><a href="#tec">Tecnologias</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
     </header>
     <div id="p1" class="profile01">
-      <div class="left-profile01">
-        <div class="rel">
-          <img
-            src="https://www.gerarmemes.com.br/uploads/galeria/a1445469.jpg"
-            alt="Gato De Botas"
-            width="250"
-            height="250"
-          />
+        <div class="left-profile01">
+            <div class="rel">
+                <img class="img-01" src="https://cinepop.com.br/wp-content/uploads/2023/01/o-gato-de-botas-2.jpg.webp" alt="Imagem de perfil">
+            </div>
         </div>
-      </div>
-      <div class="right-profile01"> 
-          <h1>Gato de Botas</h1>
-        <p>Ele é um gato comum, mas que possui habilidades extraordinárias e usa sua inteligência para ajudar seu dono a conquistar seus objetivos. O Gato de Botas é um personagem muito querido por crianças e adultos em todo o mundo. Ele já foi tema de livros, filmes, desenhos animados e até mesmo de jogos eletrônicos.</p>
+        <div class="right-profile02">
+            <h2 class="nome-p1">Gato de botas</h2>
+            <p class="p-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae numquam consequuntur tempore quae rerum laboriosam soluta error? Doloribus suscipit, unde vel repudiandae nulla maiores dolore modi. Voluptas, modi dolorem?</p>
+        </div>
     </div>
-    </div>
-</div>
     <div id="p2" class="profile02">
-      <p>perfil 02</p>
+        <p>perfil 02</p>
     </div>
     <div id="tec" class="tec">
-      <p>tecnologias</p>
+        <h2>Tecnologias</h2>
+        <img src="./imagens/gato-de-botas-2.jpg" alt="Icones" width="400px" height="auto" style="border-radius:20px ;">
+        <div class="flex-cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium doloribus porro sed et deleniti, accusamus natus ut iure doloremque atque, reprehenderit illo sunt temporibus? Delectus earum quisquam minus blanditiis?</p>
+            </div>
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum provident soluta quas tempore aspernatur modi et laborum deleniti porro natus ipsa saepe nam non laudantium iusto accusamus, id nihil ut.</p>
+            </div>
+            <div class="card">
+                <h3>JAVASCRIPT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos fugiat similique consectetur, labore rem recusandae consequuntur a, neque dignissimos eligendi vitae asperiores, delectus vero eveniet? Ut tempora impedit inventore!</p>
+            </div>
+        </div>
     </div>
     <div id="contact" class="contact">
-        <div>
+        <div class = "wrap-divs-contact">
             <div>
                 <h3>Contato</h3>
-                <p>Mande uma mensagem para nossa equipe </p>
+                <p>Mande uma mensagem para nossa equipe!</p>
+            </div>
+            <div>
+                <div>
+                    
+                    <input class ="input-style-01" type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div>
+                    
+                    <textarea class ="input-style-01"type="text" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button onclick="conferirMesagemWhatsApp()">Conferir dados inseridos</button>
               </div>
         </div>
-      
-      <div>
         <div>
-            <label for="nome">Nome</label>
-            <input type="text"  id="nome">
-
+            <div class = "wrap-divs-contact">
+                <p>Nome: <span id="confNome"></span></p>
+                <p>Mensagem: <span id="confMsg"></span></p>
+            </div>
+            <button onclick="enviar()">ZAP</button>
         </div>
-         <div>
-            <label for="mensagem">Mensagem</label>
-            <textarea type="text"  id="mensagem"></textarea>
-
-        </div>
-      
-      <button onclick="conferirMensagemWhatsapp()">Conferir dados inseridos</button>
     </div>
-    <div>
-        <div>
-            <p>Nome: <span id = "confNome"></span></p>
-            <p>Mensagem: <span id = "confMsg"></span> </p>
-        </div>
-        <button onclick="enviar()">ZAP</button>
-    </div>
-</div>
-  </body>
+</body>
 </html>

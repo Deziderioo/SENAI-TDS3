@@ -1,75 +1,38 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
 
 header{
     background-color: white;
     width: 100%;
-    height: 30px;
+    height: 50px;
     position: fixed;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 999;
 }
-.rel{
-    position: relative;
-    width: 350px;
-    height: 350px;
-    overflow: hidden;
-    border-radius: 100%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-.left-profile01{
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-    
-}
 
-.right-profile01{
-    width: 500px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-}
 ul{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
     width: 100%;
     flex-wrap: wrap;
 }
-img{
-    top: -75px;
-    position: absolute;
-    width: auto;
-    height: 500px;
-    left: -100px;
-    scale: 0.7;
-    transition: all 400ms linear;    
-}
-
-img:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    transition: all 400ms linear;    
-}
 
 li{
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 a{
@@ -85,33 +48,161 @@ a:hover{
    transition: all 200ms linear;
 
 }
+.wrap-divs-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.input-style-01{
+    border: none;
+    background: none;
+    width: 300px;
+    border-bottom: 2px solid black;
+}
 
 .profile01{
-    display: flex;
-    align-items: space;
+    display:flex ;
+    flex-direction: row;
     justify-content: center;
-    
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
     width: 100%;
-    height: auto;
+    height:auto;
     padding-top: 100px;
-    padding-bottom: 100px ;
-    background-color: green;
-    margin-top: 30px;
-    gap: 40px;
+    padding-bottom: 100px;
+    background-color: #ffffff;
+}
+.left-profile01{
+    width: 500px;
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-profile02{
+    width:600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 30px;
+}
+.nome-p1{
+    font-size: 3.2rem;
+    color: #2f384e;
+}
+.p-p1{
+    font-size: 1.6rem;
+    color: #373f53;
+    line-height: 40px;
+
+}
+.rel{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.img-01{
+    position: absolute;
+    left: -50px;
+    width: auto;
+    height: 500px;
+    transition: all 400ms linear;
+}
+.img-01:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 400ms linear;
 }
 .profile02{
     width: 100%;
     height: 500px;
     background-color: yellow;
+    padding-top: 30px;
+
 }
 .tec{
     width: 100%;
-    height: 500px;
+    height: auto;
     background-color: grey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 .contact{
     width: 100%;
     height: 500px;
-    background-color: rgb(141, 133, 133);
+    background-color: #ffffff;
+    padding-top: 30px;
+
 }
+
+.flex-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .nome-p1{
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        padding-top: 6vh;
+    }
+    .p-p1{
+        line-height: 30px;
+        padding: 30px;
+        font-size: 1.2rem;
+    }
+    .rel{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    .img-01{
+        position: absolute;
+        left: -50px;
+        width: auto;
+        height: 300px;
+        transition: all 400ms linear;
+    }
+  }
+
+  
+  @media only screen and (max-width: 500px) {
+    .nome-p1{
+        padding-top: 13vh;
+    }
+  }
+
+
+  
 
