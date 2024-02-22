@@ -11,6 +11,44 @@ body{
     width: 100vw;
     height: auto;
     overflow-x: hidden;
+    padding-top:4vh ;
+    padding-bottom:4vh ;
+    background-image: url(../assets/fundo-de-papel-de-parede-gradiente-gradiente-turvo-azul-marinho-azul-cinza-bordo-borgonha_172010-1396.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.btn-outline-primary{
+    color: aliceblue;
+
+}
+h1,h2{
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+    font-size: 2rem !important;
+    text-shadow: 2px 2px black;
+    font-weight: 900 o !important;
+    margin-bottom: 2vh !important;
+    padding: 10px;
+    border-radius: 20px;
+    letter-spacing: 4px;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+h1{
+    font-size: 3rem !important;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 8px;
+}
+.card{
+    border-radius: 15px !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
 }
 
 .wrap-card{
@@ -19,4 +57,18 @@ body{
     align-items: center;
     justify-content: center;
     gap: 4vh;
+    
+}
+
+
+@media (Width >= 1024px){
+    body{
+        background-image: url(../assets/fundo-browser.jpg);
+        }
+    .wrap-card{
+        
+        width: 100vw;
+        flex-direction: row;
+        gap: 2vw;
+    }
 }
