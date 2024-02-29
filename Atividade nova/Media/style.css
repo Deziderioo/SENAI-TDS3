@@ -1,0 +1,16 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.inputStyle{
+    padding: 10%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.result{
+    display: none;
+}

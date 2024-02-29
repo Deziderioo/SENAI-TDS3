@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 30px;
+}
+
+.form-check-input{
+    transform: scale(1.5) !important;
+    margin-right: 3vw;
+}
+
+.light{
+    background-color: rgb(123, 219, 219);
+}
+
+html{
+    background-color: crimson;
+}
