@@ -40,15 +40,18 @@ function displayCharacters(characters){
 
         const circle = document.createElement("div")
         circle.style.borderRadius = "100%"
-        circle.style.width = "5px"
-        circle.style.height = "5px"
-        circle.style.color = "yellow"
+        circle.style.width = "15px"
+        circle.style.height = "15px"
+        
 
-        if(character.status === "died"){
-            circle.style.color = "red"
+        if(character.status === "Dead"){
+            circle.style.background = "red"
+        }
+        else if(character.status === "Alive"){
+            circle.style.background = "green"
         }
         else{
-            circle.style.color = "green"
+            circle.style.background = "gray"
         }
 
         card.appendChild(name)
@@ -70,12 +73,10 @@ function searchByName(){
 
     characters.forEach((character) =>{
         const characterName = character.querySelector("h3").textContent.toLowerCase();
-        if(characterName.includes(searchTerm)){
-            character.style.display = "block"
-        }
-        else{
+        if(!characterName.includes(searchTerm)){
             character.style.display = "none"
+          
         }
-
+        
     })
 }
